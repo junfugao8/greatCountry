@@ -1,0 +1,262 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:"montserrat";
+}
+body{
+	background-color: #000;
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+#logo{
+    position: absolute;
+    left: 50px;
+    display: block;
+    width: 45px;
+    height: 46px;
+    background-image: url(../images/sy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.newdoby{
+	position: relative;
+}
+.nav{
+	width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative; 
+}
+.nav>div{
+	width: 194px;
+    height: 50px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    border-right: 1px solid #d3d3d3;
+    transform-style: preserve-3d;
+}
+.nav>div .btn{
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .1s;
+    transform-style: preserve-3d;
+}
+.btn>div{
+	position: absolute;
+    height: 48px;
+    pointer-events: none;
+    width: 174px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+.btn>div:nth-child(1){
+	color: #fff;
+    background-color: #000;
+}
+.btn>div:nth-child(1){
+transform: rotateX(90deg) translateZ(25px);
+}
+.btn>div .block{
+	display: block;
+    width: 16px;
+    height: 3px;
+    background-color: #c7c7c7;
+    margin-left: 1px;
+    margin-top: 4px;
+}
+.btn>div:nth-child(2){
+	transform: rotateX(0deg) translateZ(25px);
+}
+.btn>div:nth-child(2){
+	    color: gray;
+    background-color: #fff;
+}
+.btn>div h1{
+	font-family: trumpgothiceastbold,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu>div .block{
+    background-color: red;
+}
+.menu>div .border-bottom{background-color:#000}
+.menu>div:nth-child(2){
+	color:#fff;
+	background-color:#000
+}
+.nav>div:hover .btn{
+	transform:rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+
+	}
+.nav>div .menu{
+	transform:rotateX(-90deg);
+     -ms-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+}
+
+
+
+.zhong{
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	bottom: 0px;
+}
+.zhong .newzhong{
+	width: 100%;
+    position: relative;
+    height: 80%;
+}
+.zhong .newzhong .newleft{
+	background-color: #fff;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: -4%;
+    top: 0;
+    transform: skewX(-10deg);
+}
+.newzhong .newrigth{
+	background-color: #fff;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right:-4%;
+    top: 0;
+    transform: skewX(-10deg);
+    z-index: -10;
+}
+.newzhong .dir-newleft{
+	left: 12%;
+    text-align: left;
+    width: 465px;
+}
+.newzhong .dir-newrigth{
+	left: 55%;
+    text-align: right;
+    width: 465px;
+    position: relative;
+}
+.newzhong .dir-newleft,.newzhong .dir-newrigth{
+	position: absolute;
+    top: 18%;
+    cursor: pointer;
+}
+.newzhong .dir-newleft h1,.newzhong .dir-newrigth h1{
+	font-size: 110px;
+    line-height: 110px;
+    color: #2f2f2f;
+    font-family: trumpgothiceastbold,Arial,Helvetica,sans-serif;
+}
+.newzhong .dir-newleft .dir-block,.newzhong .dir-newrigth .dir-block{
+	display: block;
+    width: 143px;
+    height: 9px;
+    margin-top: 30px;
+    background-color: #2f2f2f;
+}
+.newdir{
+	width: 10px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: skewX(-10deg);
+}
+.newdir .newdir2{
+	width: 15px;
+    height: 0%;
+    background-color: rgba(255,255,255);
+    animation-name: annotion;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+.zhong1{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 80%;
+    top: 50px;
+    bottom: 0px;
+   background-image: url(../images/10999.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+.zhong1 .left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+
+}
+.zhong1 .right{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+.zhong3{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 50px;
+    bottom: 0px;
+    background-color: white;
+}
+.zhong3 .tupian1,.zhong3 .tupian2,.zhong3 .tupian3{
+    float: left;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    transform: skewX(-10deg);
+}
+.zhong3 .tupian1{
+    left: 125%;
+    background-image: url(../images/00.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.zhong3 .tupian2{
+     left: 125%;
+     background-image: url(../images/634.jpg);
+     background-size: cover;
+    background-position: center;
+}
+.zhong3 .tupian3{
+    left: 125%;
+    background-image: url(../images/274.jpg);
+     background-size: cover;
+    background-position: center;
+}
+#active{
+    transform:rotateX(-90deg);
+}
+
+
+
+
+
+@keyframes annotion{from{height:0%}to{height:100%}}
+.zhong .dir-newleft:hover h1{color:#fff}
+.zhong .dir-newleft:hover p{color:darkgrey}
+.zhong .dir-newrigth:hover h1{color:#fff}
+.zhong .dir-newrigth:hover p{color:darkgrey}
+.zhong .dir-newleft:hover span{background-color:#e74c4c}
+.zhong .dir-newrigth:hover span{background-color:#e74c4c}

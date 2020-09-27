@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	
+}
+header{
+	width: 100%;
+	background: linear-gradient(-45deg,#66cdcc 0%,#336799 100%);
+	float: left;
+}
+#nav{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	top: 0;
+	z-index: 999;
+	background-color: unset;
+}
+#nav ul{
+	width: 510px;
+	margin: 0 auto;
+	list-style: none;
+}
+#nav ul li{
+	float: left;
+	margin-top: 40px;
+}
+#nav ul li a{
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 20px;
+	text-decoration: none;
+	height: 20px;
+	color: #fff;
+}
+#nav ul li a:hover{
+	border-bottom: 2px solid #336655;
+}
+#box1{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	padding-top: 100px; 
+	position: relative;
+}
+#box2{
+
+}
+.home{
+	background-color: rgb(255,255,255);
+	border-radius: 15px;
+	color: #336799 !important;
+}
+.home:hover{
+	border-bottom: 0 !important;
+}
+.scol{
+	border-bottom: 2px solid #336799;
+	background-color: rgb(255,255,255,0.8) !important;
+	height: 80px !important;
+}
+.scol li{
+	margin-top: 20px !important;
+}
+.scol a{
+	color: #336799 !important;
+}
+.box1div{
+	float: left;
+	height: 500px;
+}
+#box1bullet{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -36px;
+}
+.bullet{
+	display: none;
+	float: left;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.bullet:hover{
+	background-color: #fff;
+}
+#box2 img{
+	width: 500px;
+	margin: 20px auto;
+}
+.box2div{
+	width: 500px;
+	margin: 20px auto;
+}
+.box2div img{
+	width: 500px;
+}
+.box2div p{
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-family: STHupo;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mid{
+	width: 100%;
+	height: 600px;
+	float: left;
+}
+.mid img{
+	transition: width 2s;
+	width: 0%;
+}
+.mid div{
+	margin-top: 150px;
+	float: left;
+	width: 45%;
+	height: 50%;
+}
+
+.p1{
+	width: 40%;float: left;margin-top: 200px;
+	font-family: STXingkai;
+}
+.p2{
+	width: 55%;float: left;font-size: 20px;margin-top: 20px;
+}
